@@ -1,0 +1,78 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+$heading-font: "Lato", sans-serif;
+$body-font: "Lato", sans-serif;
+
+//font-family: "Font Awesome 5 Pro";
+$fa: "Font Awesome 5 Pro";
+
+body {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $color-black;
+    background-color: $color-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    margin: 0px;
+    font-weight: 600;
+    color: $color-black;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -3px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 130%;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+    line-height: 1.88rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    outline: none !important;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-black;
+    font-family: $body-font;
+    cursor: pointer;
+}
+
+a:hover {
+    color: white;
+}

@@ -1,0 +1,124 @@
+.hero-wrapper {
+    padding: 160px 0px;
+    text-align: center;
+    position: relative;
+
+    @media (max-width: 575px) {
+        padding: 60px 0px;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 25;
+
+        .hero-text {
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: 500;
+            color: $color-white;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 30px;
+                height: 3px;
+                background-color: rgba(255, 255, 255, 0.3);
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -15px;
+            }
+        }
+
+        h1,
+        h2 {
+            color: $color-white;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 88px;
+
+            @media (max-width: 776px) {
+                font-size: 66px;
+                line-height: 76px;
+            }
+        }
+
+        h2 {
+            font-size: 46px;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 30px;
+                height: 3px;
+                background-color: rgba(255, 255, 255, 0.3);
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -15px;
+            }
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+// PAGE BANNER
+.page-banner {
+    padding: 100px 0px;
+    position: relative;
+
+    .overlay {
+        background-color: #005c47d5;
+    }
+
+    .banner-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 25;
+        text-align: center;
+
+        h1 {
+            color: $color-white;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            text-align: center;
+
+            @media (max-width: 991px) {
+                font-size: 45px;
+                line-height: 55px;
+            }
+        }
+
+        p {
+            max-width: 60%;
+            margin: 0 auto;
+            text-align: center;
+
+            @media (max-width: 991px) {
+                max-width: 100%;
+            }
+        }
+    }
+}

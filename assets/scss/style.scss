@@ -1,0 +1,17 @@
+// IMPORT THEME
+@import "./theme/default";
+@import "./theme/variables";
+@import "./theme/typography";
+@import "./theme/components";
+// @import "./theme/scrollTop";
+
+// IMPORT SECTIONS
+@import "./hero";
+@import "./header";
+// @import "./mobile-nav";
+@import "./discount";
+@import "./products";
+@import "./about";
+@import "./blog";
+@import "./contact";
+@import "./footer";

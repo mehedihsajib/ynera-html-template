@@ -1,0 +1,50 @@
+/* ====================================================
+    FEATURED DISCOUNT
+ ====================================================== */
+.featured-discount-wrapper {
+    .discount-card {
+        min-height: 480px;
+        position: relative;
+        background-position: center -70px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+
+        .card-content {
+            background-color: $color-white;
+            min-height: 210px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .brand-logo {
+            background-color: $color-black;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: -60px;
+            border: 2px solid $color-white;
+        }
+
+        h4 {
+            font-size: 28px;
+            line-height: 42px;
+            color: $color-black;
+            font-weight: 600;
+            padding: 50px;
+            padding-top: 20px;
+
+            @media (max-width: 460px) {
+                padding: 20px;
+            }
+        }
+    }
+}

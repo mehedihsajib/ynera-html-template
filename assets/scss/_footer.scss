@@ -1,0 +1,89 @@
+.footer-wrapper {
+    padding: 30px 0px;
+    padding-bottom: 10px;
+    background-color: $color-primary;
+
+    .footer-widget {
+        .widget-heading {
+            font-size: 18px;
+            font-weight: 700;
+            color: $color-white;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 30px;
+                height: 3px;
+                background-color: rgba(255, 255, 255, 0.3);
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+            }
+        }
+    }
+
+    .widget-post {
+        .post-item {
+            display: flex;
+            align-items: center;
+
+            .post-thumb {
+                min-width: 100px;
+                height: 70px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .widget-nav {
+        .nav-items {
+            li {
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                }
+            }
+
+            a {
+                color: $color-white;
+                font-size: 18px;
+                display: inline-block;
+                padding: 10px 0px;
+            }
+        }
+    }
+
+    .footer-copyrights {
+        margin-top: 30px;
+
+        .copyrights-links {
+            font-weight: 400;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+
+            a {
+                font-size: 16px;
+                color: #999;
+
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+
+        .copyright-text {
+            text-align: center;
+            font-size: 16px;
+            color: $color-light;
+        }
+    }
+}
